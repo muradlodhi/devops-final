@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud-Native E-Commerce Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Aesthetic E-Shop Admin</h1>
+        <p>DevOps Microservices Status Console</p>
+    </header>
+
+    <main class="container">
+        <section class="services-grid">
+            <div class="card" id="user-card">
+                <h3>User Service</h3>
+                <p class="status online">● Operational</p>
+                <p class="desc">Handles authentication & profiles.</p>
+            </div>
+            <div class="card" id="product-card">
+                <h3>Product Service</h3>
+                <p class="status online">● Operational</p>
+                <p class="desc">Manages catalog & inventory items.</p>
+            </div>
+            <div class="card" id="order-card">
+                <h3>Order Service</h3>
+                <p class="status online">● Operational</p>
+                <p class="desc">Processes transactions & state.</p>
+            </div>
+            <div class="card" id="notification-card">
+                <h3>Notification Service</h3>
+                <p class="status online">● Operational</p>
+                <p class="desc">Dispatches alerts & system emails.</p>
+            </div>
+        </section>
+
+        <section class="catalog-preview">
+            <h2>Product Catalog Preview (Mock Data)</h2>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Item Name</th>
+                            <th>Price</th>
+                            <th>Stock Status</th>
+                        </tr>
+                    </thead>
+                    <tbody id="product-list">
+                        <tr>
+                            <td>#101</td>
+                            <td>Mechanical Keyboard (Linear Switches)</td>
+                            <td>$89.99</td>
+                            <td><span class="badge in-stock">In Stock</span></td>
+                        </tr>
+                        <tr>
+                            <td>#102</td>
+                            <td>Aesthetic Desk Mat (Dark Theme)</td>
+                            <td>$29.99</td>
+                            <td><span class="badge in-stock">In Stock</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>DevOps Final Project — BSCS Batch 6 — Section C</p>
+    </footer>
+</body>
+</html>
