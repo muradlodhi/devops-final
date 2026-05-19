@@ -1,0 +1,126 @@
+:root {
+    --bg-dark: #0f1115;
+    --card-bg: #161920;
+    --accent-blue: #4f46e5;
+    --text-main: #e2e8f0;
+    --text-muted: #94a3b8;
+    --success: #10b981;
+}
+
+body {
+    background-color: var(--bg-dark);
+    color: var(--text-main);
+    font-family: system-ui, -apple-system, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    padding: 2rem 1rem;
+    border-bottom: 1px solid #232834;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+    letter-spacing: -0.05em;
+}
+
+header p {
+    color: var(--text-muted);
+    margin: 0.5rem 0 0 0;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.card {
+    background-color: var(--card-bg);
+    border: 1px solid #232834;
+    border-radius: 8px;
+    padding: 1.5rem;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+}
+
+.card h3 {
+    margin: 0 0 0.5rem 0;
+}
+
+.status.online {
+    color: var(--success);
+    font-weight: 600;
+    font-size: 0.85rem;
+    margin: 0 0 1rem 0;
+}
+
+.desc {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    margin: 0;
+    line-height: 1.4;
+}
+
+.catalog-preview {
+    background-color: var(--card-bg);
+    border: 1px solid #232834;
+    border-radius: 8px;
+    padding: 2rem;
+}
+
+.catalog-preview h2 {
+    margin-top: 0;
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+}
+
+.table-wrapper {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+th, td {
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid #232834;
+}
+
+th {
+    color: var(--text-muted);
+    font-weight: 500;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+}
+
+.badge.in-stock {
+    background-color: rgba(16, 185, 129, 0.1);
+    color: var(--success);
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    color: var(--text-muted);
+    font-size: 0.85rem;
+}
